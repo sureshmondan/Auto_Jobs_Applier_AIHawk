@@ -1,10 +1,11 @@
-remote: true
+remote: false
 
 experienceLevel:
   internship: false
-  entry: true
+  entry: false
   associate: true
   mid-senior level: true
+  Mid-Senior level: true
   director: false
   executive: false
 
@@ -12,39 +13,48 @@ jobTypes:
   full-time: true
   contract: false
   part-time: false
-  temporary: true
+  temporary: false
   internship: false
   other: false
-  volunteer: true
+  volunteer: false
 
 date:
-  all time: false
+  all time: true
   month: false
   week: false
-  24 hours: true
+  24 hours: false
 
 positions:
-  - Software engineer
+  - Data Engineer
+  - Data Architect
+  - Data Solutions
+  - Data Manager
+  - Snowflake
+  - Lead Data Engineer
+  - Senior Data Engineer
 
 locations:
-  - Germany
+  - United States
+  - USA
 
 apply_once_at_company: true
 
 distance: 100
 
 company_blacklist:
-  - wayfair
-  - Crossover
+  - Accenture
+  - accenture
+  - ACCENTURE
 
 title_blacklist:
-  - word1
-  - word2
+  - Sales
+  - analyst
+  - Data Scientist
 
 job_applicants_threshold:
   min_applicants: 0
   max_applicants: 30
 
-llm_model_type: openai
-llm_model: 'gpt-4o-mini'
-# llm_api_url: https://api.pawan.krd/cosmosrp/v1'
+llm_model_type: ollama
+llm_model: 'llama3.2:1b'
+llm_api_url: 'http://127.0.0.1:11434/'
