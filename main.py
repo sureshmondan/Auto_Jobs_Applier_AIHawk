@@ -189,7 +189,7 @@ def create_and_run_bot(parameters, llm_api_key):
 
 @click.command()
 @click.option('--resume', type=click.Path(exists=True, file_okay=True, dir_okay=False, path_type=Path), help="Path to the resume PDF file")
-def main(resume: Path = None):
+def main(resume: Path = "Resume_Suresh_DE.pdf"):
     try:
         data_folder = Path("data_folder")
         secrets_file, config_file, plain_text_resume_file, output_folder = FileManager.validate_data_folder(data_folder)

@@ -9,7 +9,7 @@ personal_information:
   phone_prefix: "+1"
   phone: "7472835339"
   email: "mondans.sureshbabu@outlook.com"
-  github: "[Your GitHub Profile URL]"
+  github: "https://www.linkedin.com/in/dataengr/"
   linkedin: "https://www.linkedin.com/in/dataengr/"
 
 education_details:
@@ -18,7 +18,7 @@ education_details:
     field_of_study: "[Your Field of Study]"
     final_evaluation_grade: "[Your Final Evaluation Grade]"
     start_date: "[Start Date]"
-    year_of_completion: "[Year of Completion]"
+    year_of_completion: "2010"
     exam:
       exam_name_1: "[Grade]"
       exam_name_2: "[Grade]"
@@ -59,11 +59,11 @@ experience_details:
 projects:
   - name: "[Project Name]"
     description: "[Project Description]"
-    link: "[Project Link]"
+#    link: "[Project Link]"
 
   - name: "[Project Name]"
     description: "[Project Description]"
-    link: "[Project Link]"
+#    link: "[Project Link]"
 
 achievements:
   - name: "[Achievement Name]"

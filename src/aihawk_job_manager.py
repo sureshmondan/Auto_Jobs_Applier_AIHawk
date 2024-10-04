@@ -375,10 +375,10 @@ class AIHawkJobManager:
         job_title, company, job_location, apply_method, link = "", "", "", "", ""
         try:
             print(job_tile.get_attribute('outerHTML'))
-            job_title = job_tile.find_element(By.CLASS_NAME, 'job-card-list__title').find_element(By.TAG_NAME, 'strong').text
+            job_title = job_tile.find_element(By.CLASS_NAME, 'ember-view').find_element(By.TAG_NAME, 'strong').text
             
-            link = job_tile.find_element(By.CLASS_NAME, 'job-card-list__title').get_attribute('href').split('?')[0]
-            company = job_tile.find_element(By.CLASS_NAME, 'job-card-container__primary-description').text
+            link = job_tile.find_element(By.CLASS_NAME, 'ember-view').get_attribute('href').split('?')[0]
+            company = job_tile.find_element(By.CLASS_NAME, 'app-aware-link').text
             logger.debug(f"Job information extracted: {job_title} at {company}")
         except NoSuchElementException:
             logger.warning("Some job information (title, link, or company) is missing.")
@@ -387,7 +387,7 @@ class AIHawkJobManager:
         except NoSuchElementException:
             logger.warning("Job location is missing.")
         try:
-            apply_method = job_tile.find_element(By.CLASS_NAME, 'job-card-container__apply-method').text
+            apply_method = job_tile.find_element(By.CLASS_NAME, 'job-card-job-posting-card-wrapper__actions').text
         except NoSuchElementException:
             apply_method = "Applied"
             logger.warning("Apply method not found, assuming 'Applied'.")
